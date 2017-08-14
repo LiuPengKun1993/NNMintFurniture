@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="NNItemTableViewCell" customModule="NNMintFurniture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趁着年轻去旅行吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-QI-d0i">
+                        <rect key="frame" x="10" y="10" width="139" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-nj-ira">
+                        <rect key="frame" x="10" y="41" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="hNa-dC-b3m"/>
+                            <constraint firstAttribute="height" constant="60" id="zP8-W7-gCE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年轻还有自己的白日梦需要追逐，加油吧少年！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEW-d4-Exr">
+                        <rect key="frame" x="80" y="41" width="230" height="31.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.6万人关注/梦想" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0r-Hk-YsN">
+                        <rect key="frame" x="80" y="85" width="230" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjX-nL-wht">
+                        <rect key="frame" x="285" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="h8I-Hc-9v2"/>
+                            <constraint firstAttribute="width" constant="25" id="ywd-NB-UVy"/>
+                        </constraints>
+                        <state key="normal" image="icon_button_like"/>
+                        <state key="selected" image="icon_button_liked"/>
+                        <connections>
+                            <action selector="likeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t2k-xX-Q5I"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sjX-nL-wht" firstAttribute="trailing" secondItem="BEW-d4-Exr" secondAttribute="trailing" id="5qo-Jv-ulI"/>
+                    <constraint firstItem="W0r-Hk-YsN" firstAttribute="leading" secondItem="BEW-d4-Exr" secondAttribute="leading" id="8rN-Wk-qn1"/>
+                    <constraint firstItem="sjX-nL-wht" firstAttribute="centerY" secondItem="WZY-QI-d0i" secondAttribute="centerY" id="9R6-P2-NP4"/>
+                    <constraint firstItem="WZY-QI-d0i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GGC-Rr-aUv"/>
+                    <constraint firstItem="W0r-Hk-YsN" firstAttribute="trailing" secondItem="BEW-d4-Exr" secondAttribute="trailing" id="JWK-I0-vJ5"/>
+                    <constraint firstItem="W0r-Hk-YsN" firstAttribute="bottom" secondItem="7K1-nj-ira" secondAttribute="bottom" id="XFW-ar-arC"/>
+                    <constraint firstItem="WZY-QI-d0i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="YEs-SY-fUT"/>
+                    <constraint firstItem="7K1-nj-ira" firstAttribute="top" secondItem="WZY-QI-d0i" secondAttribute="bottom" constant="10" id="e1F-Or-qKo"/>
+                    <constraint firstAttribute="trailing" secondItem="BEW-d4-Exr" secondAttribute="trailing" constant="10" id="k2g-81-dDL"/>
+                    <constraint firstItem="7K1-nj-ira" firstAttribute="leading" secondItem="WZY-QI-d0i" secondAttribute="leading" id="vOz-MB-w4g"/>
+                    <constraint firstItem="BEW-d4-Exr" firstAttribute="leading" secondItem="7K1-nj-ira" secondAttribute="trailing" constant="10" id="xaD-o1-fGB"/>
+                    <constraint firstItem="BEW-d4-Exr" firstAttribute="top" secondItem="7K1-nj-ira" secondAttribute="top" id="xjo-si-Up3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="100.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="header" width="640" height="640"/>
+        <image name="icon_button_like" width="16" height="16"/>
+        <image name="icon_button_liked" width="16" height="16"/>
+    </resources>
+</document>

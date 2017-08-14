@@ -1,0 +1,859 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		696FEB211F3855E900069EB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FEB1F1F3855E900069EB3 /* Main.storyboard */; };
+		696FEB231F3855E900069EB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696FEB221F3855E900069EB3 /* Assets.xcassets */; };
+		696FEB261F3855E900069EB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696FEB241F3855E900069EB3 /* LaunchScreen.storyboard */; };
+		696FEB311F3855E900069EB3 /* NNMintFurnitureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB301F3855E900069EB3 /* NNMintFurnitureTests.swift */; };
+		696FEB3C1F3855E900069EB3 /* NNMintFurnitureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB3B1F3855E900069EB3 /* NNMintFurnitureUITests.swift */; };
+		696FEB501F38566200069EB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB4E1F38566200069EB3 /* AppDelegate.swift */; };
+		696FEB531F385BF400069EB3 /* NNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB521F385BF400069EB3 /* NNTabBarController.swift */; };
+		696FEB661F385F6500069EB3 /* NNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB651F385F6500069EB3 /* NNNavigationController.swift */; };
+		696FEB681F385F8400069EB3 /* NNBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696FEB671F385F8400069EB3 /* NNBaseViewController.swift */; };
+		697D83951F3C3743009ABC29 /* NNConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D83941F3C3743009ABC29 /* NNConst.swift */; };
+		697D84161F400A04009ABC29 /* NNItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D840E1F400A04009ABC29 /* NNItemCollectionViewController.swift */; };
+		697D84171F400A04009ABC29 /* NNItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D840F1F400A04009ABC29 /* NNItemController.swift */; };
+		697D84181F400A04009ABC29 /* NNItemScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84101F400A04009ABC29 /* NNItemScrollView.swift */; };
+		697D84191F400A04009ABC29 /* NNItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84111F400A04009ABC29 /* NNItemTableViewController.swift */; };
+		697D841A1F400A04009ABC29 /* NNItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84141F400A04009ABC29 /* NNItemTableViewCell.swift */; };
+		697D841B1F400A04009ABC29 /* NNItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697D84151F400A04009ABC29 /* NNItemTableViewCell.xib */; };
+		697D84301F400AF8009ABC29 /* NNClassificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D841E1F400AF8009ABC29 /* NNClassificationController.swift */; };
+		697D84311F400AF8009ABC29 /* NNHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84231F400AF8009ABC29 /* NNHomePageController.swift */; };
+		697D84321F400AF8009ABC29 /* NNSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84241F400AF8009ABC29 /* NNSearchController.swift */; };
+		697D84331F400AF8009ABC29 /* NNTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84251F400AF8009ABC29 /* NNTestViewController.swift */; };
+		697D84341F400AF8009ABC29 /* NNHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84281F400AF8009ABC29 /* NNHomePageView.swift */; };
+		697D84351F400AF8009ABC29 /* NNSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84291F400AF8009ABC29 /* NNSearchBar.swift */; };
+		697D84361F400AF8009ABC29 /* NNSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */; };
+		697D84371F400AF8009ABC29 /* NNMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842D1F400AF8009ABC29 /* NNMeController.swift */; };
+		697D84391F402C9F009ABC29 /* NNShufflingFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */; };
+		813CCCB5B2A2E2B08A82A481 /* Pods_NNMintFurniture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC85EFF03B441FC01A7A94D /* Pods_NNMintFurniture.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		696FEB2D1F3855E900069EB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696FEB101F3855E900069EB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 696FEB171F3855E900069EB3;
+			remoteInfo = NNMintFurniture;
+		};
+		696FEB381F3855E900069EB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 696FEB101F3855E900069EB3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 696FEB171F3855E900069EB3;
+			remoteInfo = NNMintFurniture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14191DD1E9B219D1EF7E14C8 /* Pods-NNMintFurniture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMintFurniture.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NNMintFurniture/Pods-NNMintFurniture.debug.xcconfig"; sourceTree = "<group>"; };
+		696FEB181F3855E900069EB3 /* NNMintFurniture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NNMintFurniture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		696FEB201F3855E900069EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		696FEB221F3855E900069EB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		696FEB251F3855E900069EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		696FEB271F3855E900069EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696FEB2C1F3855E900069EB3 /* NNMintFurnitureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNMintFurnitureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		696FEB301F3855E900069EB3 /* NNMintFurnitureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNMintFurnitureTests.swift; sourceTree = "<group>"; };
+		696FEB321F3855E900069EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696FEB371F3855E900069EB3 /* NNMintFurnitureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNMintFurnitureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		696FEB3B1F3855E900069EB3 /* NNMintFurnitureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NNMintFurnitureUITests.swift; sourceTree = "<group>"; };
+		696FEB3D1F3855E900069EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		696FEB4E1F38566200069EB3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		696FEB521F385BF400069EB3 /* NNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNTabBarController.swift; sourceTree = "<group>"; };
+		696FEB651F385F6500069EB3 /* NNNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNNavigationController.swift; sourceTree = "<group>"; };
+		696FEB671F385F8400069EB3 /* NNBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNBaseViewController.swift; sourceTree = "<group>"; };
+		697D83941F3C3743009ABC29 /* NNConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNConst.swift; sourceTree = "<group>"; };
+		697D839A1F3C5267009ABC29 /* NNMintFurniture-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NNMintFurniture-Bridging-Header.h"; path = "../NNMintFurniture/Category/NNMintFurniture-Bridging-Header.h"; sourceTree = "<group>"; };
+		697D840E1F400A04009ABC29 /* NNItemCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemCollectionViewController.swift; sourceTree = "<group>"; };
+		697D840F1F400A04009ABC29 /* NNItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemController.swift; sourceTree = "<group>"; };
+		697D84101F400A04009ABC29 /* NNItemScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemScrollView.swift; sourceTree = "<group>"; };
+		697D84111F400A04009ABC29 /* NNItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemTableViewController.swift; sourceTree = "<group>"; };
+		697D84141F400A04009ABC29 /* NNItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemTableViewCell.swift; sourceTree = "<group>"; };
+		697D84151F400A04009ABC29 /* NNItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NNItemTableViewCell.xib; sourceTree = "<group>"; };
+		697D841E1F400AF8009ABC29 /* NNClassificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNClassificationController.swift; sourceTree = "<group>"; };
+		697D84231F400AF8009ABC29 /* NNHomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNHomePageController.swift; sourceTree = "<group>"; };
+		697D84241F400AF8009ABC29 /* NNSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchController.swift; sourceTree = "<group>"; };
+		697D84251F400AF8009ABC29 /* NNTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNTestViewController.swift; sourceTree = "<group>"; };
+		697D84281F400AF8009ABC29 /* NNHomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNHomePageView.swift; sourceTree = "<group>"; };
+		697D84291F400AF8009ABC29 /* NNSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchBar.swift; sourceTree = "<group>"; };
+		697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchTextField.swift; sourceTree = "<group>"; };
+		697D842D1F400AF8009ABC29 /* NNMeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNMeController.swift; sourceTree = "<group>"; };
+		697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNShufflingFigureView.swift; sourceTree = "<group>"; };
+		A91616105C4E8BF0015C3E3A /* Pods-NNMintFurniture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMintFurniture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNMintFurniture/Pods-NNMintFurniture.release.xcconfig"; sourceTree = "<group>"; };
+		ECC85EFF03B441FC01A7A94D /* Pods_NNMintFurniture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNMintFurniture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		696FEB151F3855E900069EB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813CCCB5B2A2E2B08A82A481 /* Pods_NNMintFurniture.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB291F3855E900069EB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB341F3855E900069EB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		696FEB0F1F3855E900069EB3 = {
+			isa = PBXGroup;
+			children = (
+				696FEB1A1F3855E900069EB3 /* NNMintFurniture */,
+				696FEB2F1F3855E900069EB3 /* NNMintFurnitureTests */,
+				696FEB3A1F3855E900069EB3 /* NNMintFurnitureUITests */,
+				696FEB191F3855E900069EB3 /* Products */,
+				F56ABCAF7B0FBDBDEBBCEE14 /* Pods */,
+				8E4FA55D016BEA8D17D311AE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		696FEB191F3855E900069EB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				696FEB181F3855E900069EB3 /* NNMintFurniture.app */,
+				696FEB2C1F3855E900069EB3 /* NNMintFurnitureTests.xctest */,
+				696FEB371F3855E900069EB3 /* NNMintFurnitureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		696FEB1A1F3855E900069EB3 /* NNMintFurniture */ = {
+			isa = PBXGroup;
+			children = (
+				696FEB4D1F38566200069EB3 /* Main */,
+				696FEB541F385EE600069EB3 /* Class */,
+				696FEB491F38564700069EB3 /* Category */,
+				696FEB4B1F38564700069EB3 /* Common */,
+				696FEB711F3863D600069EB3 /* Tool */,
+				696FEB1F1F3855E900069EB3 /* Main.storyboard */,
+				696FEB221F3855E900069EB3 /* Assets.xcassets */,
+				696FEB241F3855E900069EB3 /* LaunchScreen.storyboard */,
+				696FEB271F3855E900069EB3 /* Info.plist */,
+			);
+			path = NNMintFurniture;
+			sourceTree = "<group>";
+		};
+		696FEB2F1F3855E900069EB3 /* NNMintFurnitureTests */ = {
+			isa = PBXGroup;
+			children = (
+				696FEB301F3855E900069EB3 /* NNMintFurnitureTests.swift */,
+				696FEB321F3855E900069EB3 /* Info.plist */,
+			);
+			path = NNMintFurnitureTests;
+			sourceTree = "<group>";
+		};
+		696FEB3A1F3855E900069EB3 /* NNMintFurnitureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				697D839A1F3C5267009ABC29 /* NNMintFurniture-Bridging-Header.h */,
+				696FEB3B1F3855E900069EB3 /* NNMintFurnitureUITests.swift */,
+				696FEB3D1F3855E900069EB3 /* Info.plist */,
+			);
+			path = NNMintFurnitureUITests;
+			sourceTree = "<group>";
+		};
+		696FEB491F38564700069EB3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		696FEB4B1F38564700069EB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		696FEB4D1F38566200069EB3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				696FEB4E1F38566200069EB3 /* AppDelegate.swift */,
+				696FEB521F385BF400069EB3 /* NNTabBarController.swift */,
+				696FEB651F385F6500069EB3 /* NNNavigationController.swift */,
+				696FEB671F385F8400069EB3 /* NNBaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		696FEB541F385EE600069EB3 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				697D841C1F400AF8009ABC29 /* Classification */,
+				697D840C1F400A04009ABC29 /* Item */,
+				697D84211F400AF8009ABC29 /* HomePage */,
+				697D842B1F400AF8009ABC29 /* Me */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		696FEB711F3863D600069EB3 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				697D83941F3C3743009ABC29 /* NNConst.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		697D840C1F400A04009ABC29 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				697D840D1F400A04009ABC29 /* Controllers */,
+				697D84121F400A04009ABC29 /* Models */,
+				697D84131F400A04009ABC29 /* Views */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		697D840D1F400A04009ABC29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				697D840E1F400A04009ABC29 /* NNItemCollectionViewController.swift */,
+				697D840F1F400A04009ABC29 /* NNItemController.swift */,
+				697D84101F400A04009ABC29 /* NNItemScrollView.swift */,
+				697D84111F400A04009ABC29 /* NNItemTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		697D84121F400A04009ABC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		697D84131F400A04009ABC29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				697D84141F400A04009ABC29 /* NNItemTableViewCell.swift */,
+				697D84151F400A04009ABC29 /* NNItemTableViewCell.xib */,
+				697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		697D841C1F400AF8009ABC29 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				697D841D1F400AF8009ABC29 /* Controllers */,
+				697D841F1F400AF8009ABC29 /* Models */,
+				697D84201F400AF8009ABC29 /* Views */,
+			);
+			path = Classification;
+			sourceTree = "<group>";
+		};
+		697D841D1F400AF8009ABC29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				697D841E1F400AF8009ABC29 /* NNClassificationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		697D841F1F400AF8009ABC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		697D84201F400AF8009ABC29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		697D84211F400AF8009ABC29 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				697D84221F400AF8009ABC29 /* Controllers */,
+				697D84261F400AF8009ABC29 /* Models */,
+				697D84271F400AF8009ABC29 /* Views */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		697D84221F400AF8009ABC29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				697D84231F400AF8009ABC29 /* NNHomePageController.swift */,
+				697D84241F400AF8009ABC29 /* NNSearchController.swift */,
+				697D84251F400AF8009ABC29 /* NNTestViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		697D84261F400AF8009ABC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		697D84271F400AF8009ABC29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				697D84281F400AF8009ABC29 /* NNHomePageView.swift */,
+				697D84291F400AF8009ABC29 /* NNSearchBar.swift */,
+				697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		697D842B1F400AF8009ABC29 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				697D842C1F400AF8009ABC29 /* Controllers */,
+				697D842E1F400AF8009ABC29 /* Models */,
+				697D842F1F400AF8009ABC29 /* Views */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		697D842C1F400AF8009ABC29 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				697D842D1F400AF8009ABC29 /* NNMeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		697D842E1F400AF8009ABC29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		697D842F1F400AF8009ABC29 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E4FA55D016BEA8D17D311AE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECC85EFF03B441FC01A7A94D /* Pods_NNMintFurniture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F56ABCAF7B0FBDBDEBBCEE14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				14191DD1E9B219D1EF7E14C8 /* Pods-NNMintFurniture.debug.xcconfig */,
+				A91616105C4E8BF0015C3E3A /* Pods-NNMintFurniture.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		696FEB171F3855E900069EB3 /* NNMintFurniture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696FEB401F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurniture" */;
+			buildPhases = (
+				2A7B4865689F2A3F51CD1BE3 /* [CP] Check Pods Manifest.lock */,
+				696FEB141F3855E900069EB3 /* Sources */,
+				696FEB151F3855E900069EB3 /* Frameworks */,
+				696FEB161F3855E900069EB3 /* Resources */,
+				91298127570F92D7511A5BF3 /* [CP] Embed Pods Frameworks */,
+				1F75E76AD541EF66143F205A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NNMintFurniture;
+			productName = NNMintFurniture;
+			productReference = 696FEB181F3855E900069EB3 /* NNMintFurniture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		696FEB2B1F3855E900069EB3 /* NNMintFurnitureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696FEB431F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurnitureTests" */;
+			buildPhases = (
+				696FEB281F3855E900069EB3 /* Sources */,
+				696FEB291F3855E900069EB3 /* Frameworks */,
+				696FEB2A1F3855E900069EB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				696FEB2E1F3855E900069EB3 /* PBXTargetDependency */,
+			);
+			name = NNMintFurnitureTests;
+			productName = NNMintFurnitureTests;
+			productReference = 696FEB2C1F3855E900069EB3 /* NNMintFurnitureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		696FEB361F3855E900069EB3 /* NNMintFurnitureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 696FEB461F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurnitureUITests" */;
+			buildPhases = (
+				696FEB331F3855E900069EB3 /* Sources */,
+				696FEB341F3855E900069EB3 /* Frameworks */,
+				696FEB351F3855E900069EB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				696FEB391F3855E900069EB3 /* PBXTargetDependency */,
+			);
+			name = NNMintFurnitureUITests;
+			productName = NNMintFurnitureUITests;
+			productReference = 696FEB371F3855E900069EB3 /* NNMintFurnitureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		696FEB101F3855E900069EB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NN;
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zhongNing;
+				TargetAttributes = {
+					696FEB171F3855E900069EB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					696FEB2B1F3855E900069EB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 696FEB171F3855E900069EB3;
+					};
+					696FEB361F3855E900069EB3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 696FEB171F3855E900069EB3;
+					};
+				};
+			};
+			buildConfigurationList = 696FEB131F3855E900069EB3 /* Build configuration list for PBXProject "NNMintFurniture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 696FEB0F1F3855E900069EB3;
+			productRefGroup = 696FEB191F3855E900069EB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				696FEB171F3855E900069EB3 /* NNMintFurniture */,
+				696FEB2B1F3855E900069EB3 /* NNMintFurnitureTests */,
+				696FEB361F3855E900069EB3 /* NNMintFurnitureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		696FEB161F3855E900069EB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696FEB261F3855E900069EB3 /* LaunchScreen.storyboard in Resources */,
+				696FEB231F3855E900069EB3 /* Assets.xcassets in Resources */,
+				697D841B1F400A04009ABC29 /* NNItemTableViewCell.xib in Resources */,
+				696FEB211F3855E900069EB3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB2A1F3855E900069EB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB351F3855E900069EB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F75E76AD541EF66143F205A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNMintFurniture/Pods-NNMintFurniture-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7B4865689F2A3F51CD1BE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91298127570F92D7511A5BF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NNMintFurniture/Pods-NNMintFurniture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		696FEB141F3855E900069EB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				697D841A1F400A04009ABC29 /* NNItemTableViewCell.swift in Sources */,
+				697D84191F400A04009ABC29 /* NNItemTableViewController.swift in Sources */,
+				697D84341F400AF8009ABC29 /* NNHomePageView.swift in Sources */,
+				697D84351F400AF8009ABC29 /* NNSearchBar.swift in Sources */,
+				697D84361F400AF8009ABC29 /* NNSearchTextField.swift in Sources */,
+				697D84371F400AF8009ABC29 /* NNMeController.swift in Sources */,
+				697D83951F3C3743009ABC29 /* NNConst.swift in Sources */,
+				696FEB531F385BF400069EB3 /* NNTabBarController.swift in Sources */,
+				697D84321F400AF8009ABC29 /* NNSearchController.swift in Sources */,
+				697D84181F400A04009ABC29 /* NNItemScrollView.swift in Sources */,
+				697D84331F400AF8009ABC29 /* NNTestViewController.swift in Sources */,
+				697D84391F402C9F009ABC29 /* NNShufflingFigureView.swift in Sources */,
+				697D84171F400A04009ABC29 /* NNItemController.swift in Sources */,
+				697D84301F400AF8009ABC29 /* NNClassificationController.swift in Sources */,
+				697D84161F400A04009ABC29 /* NNItemCollectionViewController.swift in Sources */,
+				696FEB501F38566200069EB3 /* AppDelegate.swift in Sources */,
+				696FEB681F385F8400069EB3 /* NNBaseViewController.swift in Sources */,
+				696FEB661F385F6500069EB3 /* NNNavigationController.swift in Sources */,
+				697D84311F400AF8009ABC29 /* NNHomePageController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB281F3855E900069EB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696FEB311F3855E900069EB3 /* NNMintFurnitureTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696FEB331F3855E900069EB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				696FEB3C1F3855E900069EB3 /* NNMintFurnitureUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		696FEB2E1F3855E900069EB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 696FEB171F3855E900069EB3 /* NNMintFurniture */;
+			targetProxy = 696FEB2D1F3855E900069EB3 /* PBXContainerItemProxy */;
+		};
+		696FEB391F3855E900069EB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 696FEB171F3855E900069EB3 /* NNMintFurniture */;
+			targetProxy = 696FEB381F3855E900069EB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		696FEB1F1F3855E900069EB3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				696FEB201F3855E900069EB3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		696FEB241F3855E900069EB3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				696FEB251F3855E900069EB3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		696FEB3E1F3855E900069EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		696FEB3F1F3855E900069EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		696FEB411F3855E900069EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14191DD1E9B219D1EF7E14C8 /* Pods-NNMintFurniture.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = NNMintFurniture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurniture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NNMintFurniture/Category/NNMintFurniture-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		696FEB421F3855E900069EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A91616105C4E8BF0015C3E3A /* Pods-NNMintFurniture.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = NNMintFurniture/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurniture;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NNMintFurniture/Category/NNMintFurniture-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		696FEB441F3855E900069EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NNMintFurnitureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurnitureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNMintFurniture.app/NNMintFurniture";
+			};
+			name = Debug;
+		};
+		696FEB451F3855E900069EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NNMintFurnitureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurnitureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NNMintFurniture.app/NNMintFurniture";
+			};
+			name = Release;
+		};
+		696FEB471F3855E900069EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NNMintFurnitureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurnitureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NNMintFurniture;
+			};
+			name = Debug;
+		};
+		696FEB481F3855E900069EB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NNMintFurnitureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zhongNing.NNMintFurnitureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NNMintFurniture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		696FEB131F3855E900069EB3 /* Build configuration list for PBXProject "NNMintFurniture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696FEB3E1F3855E900069EB3 /* Debug */,
+				696FEB3F1F3855E900069EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696FEB401F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurniture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696FEB411F3855E900069EB3 /* Debug */,
+				696FEB421F3855E900069EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696FEB431F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurnitureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696FEB441F3855E900069EB3 /* Debug */,
+				696FEB451F3855E900069EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		696FEB461F3855E900069EB3 /* Build configuration list for PBXNativeTarget "NNMintFurnitureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				696FEB471F3855E900069EB3 /* Debug */,
+				696FEB481F3855E900069EB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 696FEB101F3855E900069EB3 /* Project object */;
+}
