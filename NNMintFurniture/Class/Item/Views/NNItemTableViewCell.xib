@@ -43,23 +43,9 @@
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjX-nL-wht">
-                        <rect key="frame" x="285" y="8" width="25" height="25"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="25" id="h8I-Hc-9v2"/>
-                            <constraint firstAttribute="width" constant="25" id="ywd-NB-UVy"/>
-                        </constraints>
-                        <state key="normal" image="icon_button_like"/>
-                        <state key="selected" image="icon_button_liked"/>
-                        <connections>
-                            <action selector="likeBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t2k-xX-Q5I"/>
-                        </connections>
-                    </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="sjX-nL-wht" firstAttribute="trailing" secondItem="BEW-d4-Exr" secondAttribute="trailing" id="5qo-Jv-ulI"/>
                     <constraint firstItem="W0r-Hk-YsN" firstAttribute="leading" secondItem="BEW-d4-Exr" secondAttribute="leading" id="8rN-Wk-qn1"/>
-                    <constraint firstItem="sjX-nL-wht" firstAttribute="centerY" secondItem="WZY-QI-d0i" secondAttribute="centerY" id="9R6-P2-NP4"/>
                     <constraint firstItem="WZY-QI-d0i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GGC-Rr-aUv"/>
                     <constraint firstItem="W0r-Hk-YsN" firstAttribute="trailing" secondItem="BEW-d4-Exr" secondAttribute="trailing" id="JWK-I0-vJ5"/>
                     <constraint firstItem="W0r-Hk-YsN" firstAttribute="bottom" secondItem="7K1-nj-ira" secondAttribute="bottom" id="XFW-ar-arC"/>
@@ -76,7 +62,5 @@
     </objects>
     <resources>
         <image name="header" width="640" height="640"/>
-        <image name="icon_button_like" width="16" height="16"/>
-        <image name="icon_button_liked" width="16" height="16"/>
     </resources>
 </document>

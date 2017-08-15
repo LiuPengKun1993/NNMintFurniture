@@ -14,10 +14,6 @@ class NNItemTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
-    @IBAction func likeBtnClick(_ sender: UIButton) {
-        sender.isSelected = !sender.isSelected
-    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

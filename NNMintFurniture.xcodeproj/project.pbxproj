@@ -201,9 +201,9 @@
 		696FEB541F385EE600069EB3 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				697D841C1F400AF8009ABC29 /* Classification */,
-				697D840C1F400A04009ABC29 /* Item */,
 				697D84211F400AF8009ABC29 /* HomePage */,
+				697D840C1F400A04009ABC29 /* Item */,
+				697D841C1F400AF8009ABC29 /* Classification */,
 				697D842B1F400AF8009ABC29 /* Me */,
 			);
 			path = Class;
