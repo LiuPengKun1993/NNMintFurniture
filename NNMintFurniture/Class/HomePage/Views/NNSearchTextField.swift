@@ -10,7 +10,7 @@ import UIKit
 
 class NNSearchTextField: UITextField {
     
-    /// 初始化 NNSearchTextField
+    // MARK: - 初始化 NNSearchTextField
     override init(frame: CGRect) {
         super .init(frame: frame)
         leftView = leftV
@@ -22,7 +22,7 @@ class NNSearchTextField: UITextField {
         enablesReturnKeyAutomatically = true
     }
     
-    /// 懒加载左边的搜索图片
+    // MARK: - 懒加载左边的搜索图片
     private lazy var leftV: UIView = {
         let leftV = UIView()
         let leftImage = UIImageView()

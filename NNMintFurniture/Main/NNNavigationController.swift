@@ -17,7 +17,7 @@ class NNNavigationController: UINavigationController {
         navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white, NSFontAttributeName: UIFont.systemFont(ofSize: 17)]
     }
 
-    /// 重写方法
+    // MARK: - 重写 pushViewController 方法
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if viewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
@@ -26,17 +26,17 @@ class NNNavigationController: UINavigationController {
         super.pushViewController(viewController, animated: true)
     }
     
-    /// 返回按钮
+    // MARK: - 返回按钮
     func navigationBackClick() {
-        /// 隐藏提示框
+        // 隐藏提示框
         if SVProgressHUD.isVisible() {
             SVProgressHUD.dismiss()
         }
-        /// 隐藏指示器
+        // 隐藏指示器
         if UIApplication.shared.isNetworkActivityIndicatorVisible {
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
         }
-        /// pop 出页面
+        // pop 出页面
         popViewController(animated: true)
     }
 }

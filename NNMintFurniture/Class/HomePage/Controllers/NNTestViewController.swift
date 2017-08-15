@@ -21,9 +21,8 @@ class NNTestViewController: UITableViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
     }
 
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return 20
     }
     

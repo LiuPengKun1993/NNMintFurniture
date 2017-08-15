@@ -36,14 +36,7 @@ class NNItemScrollView: UIViewController, UIScrollViewDelegate, NNItemBtnViewDel
         scrollView.maximumZoomScale = 2
     }
     
-    private lazy var itemBtnView: NNItemBtnView = {
-        let itemBtnView = NNItemBtnView()
-        itemBtnView.frame = CGRect(x: 30, y: 100, width: 100, height: 100)
-        itemBtnView.delegate = self
-        return itemBtnView
-    }()
-    
-    // MARK: - Action
+    // MARK: - 放大缩小
     // MARK: 放大
     func amplificationBtnClick() {
         var zoomScale = scrollView.zoomScale // 当前缩放
@@ -64,13 +57,13 @@ class NNItemScrollView: UIViewController, UIScrollViewDelegate, NNItemBtnViewDel
         self.scrollView.setZoomScale(zoomScale, animated: true)
     }
     
-    // MARK: - UIScrollViewDelegate
-    // MARK: - 滚动中
+    // MARK: - UIScrollViewDelegate 代理
+    // MARK: 滚动中
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print(#function)
     }
     
-    // MARK: - 手指触摸开始滚动
+    // MARK: 手指触摸开始滚动
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         print(#function)
     }
@@ -85,13 +78,23 @@ class NNItemScrollView: UIViewController, UIScrollViewDelegate, NNItemBtnViewDel
         return self.imageView
     }
     
-    // MARK: - 点击顶部的时间，是否回滚到顶部
+    // MARK: 点击顶部的时间，是否回滚到顶部
     func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
         return scrollView.scrollsToTop
     }
+    
+    // MARK: - 懒加载按钮的父视图
+    private lazy var itemBtnView: NNItemBtnView = {
+        let itemBtnView = NNItemBtnView()
+        itemBtnView.frame = CGRect(x: 30, y: 100, width: 100, height: 100)
+        itemBtnView.delegate = self
+        return itemBtnView
+    }()
 }
 
+// MARK: - NNItemBtnViewDelegate 上下左右点击代理
 extension NNItemScrollView {
+    // MARK: 向左
     func leftBtnClickDelegate() {
         var point = self.scrollView.contentOffset
         point.x += 100
@@ -99,6 +102,7 @@ extension NNItemScrollView {
         scrollView.setContentOffset(point, animated: true)
     }
     
+    // MARK: 向右
     func rightBtnClickDelegate() {
         var point = self.scrollView.contentOffset
         point.x -= 100
@@ -106,6 +110,7 @@ extension NNItemScrollView {
         scrollView.setContentOffset(point, animated: true)
     }
     
+    // MARK: 向上
     func topBtnClickDelegate() {
         var point = self.scrollView.contentOffset
         point.y += 50
@@ -113,6 +118,7 @@ extension NNItemScrollView {
         scrollView.setContentOffset(point, animated: true)
     }
     
+    // MARK: 向下
     func bottomBtnClickDelegate() {
         var point = self.scrollView.contentOffset
         point.y -= 50

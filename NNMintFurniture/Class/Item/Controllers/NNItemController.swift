@@ -68,6 +68,7 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
         navigationController?.navigationBar.alpha = 1
     }
     
+    // MARK: - 懒加载 tableView
     private lazy var tableView : UITableView = {
         let tableView = UITableView()
         tableView.frame = CGRect(x: 0, y: 0, width: NNScreenWidth, height: NNScreenHeight)

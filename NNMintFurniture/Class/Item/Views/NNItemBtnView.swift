@@ -28,6 +28,11 @@ class NNItemBtnView: UIView {
         layer.masksToBounds = true
         layer.cornerRadius = 30
         
+        setupUI()
+    }
+
+    // MARK: - 设置 UI 界面
+    func setupUI() {
         addSubview(leftBtn)
         addSubview(rightBtn)
         addSubview(topBtn)
@@ -66,30 +71,37 @@ class NNItemBtnView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Action
+    // MARK: 点击左边按钮
     func leftBtnClick() {
         if self.delegate != nil && (self.delegate?.responds(to: #selector(NNItemBtnViewDelegate.leftBtnClickDelegate))) != nil {
             delegate?.leftBtnClickDelegate()
+        }
     }
-    }
-
+    
+    // MARK: 点击右边按钮
     func rightBtnClick() {
         if self.delegate != nil && (self.delegate?.responds(to: #selector(NNItemBtnViewDelegate.rightBtnClickDelegate))) != nil {
             delegate?.rightBtnClickDelegate()
         }
     }
     
+    // MARK: 点击上边按钮
     func topBtnClick() {
         if self.delegate != nil && (self.delegate?.responds(to: #selector(NNItemBtnViewDelegate.topBtnClickDelegate))) != nil {
             delegate?.topBtnClickDelegate()
         }
     }
     
+    // MARK: 点击下边按钮
     func bottomBtnClick() {
         if self.delegate != nil && (self.delegate?.responds(to: #selector(NNItemBtnViewDelegate.bottomBtnClickDelegate))) != nil {
             delegate?.bottomBtnClickDelegate()
         }
     }
 
+    // MARK: - 懒加载
+    // MARK: 懒加载左边按钮
     private lazy var leftBtn: UIButton = {
         var leftBtn = UIButton()
         leftBtn.setTitle("向左", for: .normal)
@@ -100,6 +112,7 @@ class NNItemBtnView: UIView {
         return leftBtn
     }()
     
+    // MARK: 懒加载右边按钮
     private lazy var rightBtn: UIButton = {
         let rightBtn = UIButton()
         rightBtn.setTitle("向右", for: .normal)
@@ -110,6 +123,7 @@ class NNItemBtnView: UIView {
         return rightBtn
     }()
     
+    // MARK: 懒加载上边按钮
     private lazy var topBtn: UIButton = {
         let topBtn = UIButton()
         topBtn.setTitle("向上", for: .normal)
@@ -120,6 +134,7 @@ class NNItemBtnView: UIView {
         return topBtn
     }()
     
+    // MARK: 懒加载下边按钮
     private lazy var bottomBtn: UIButton = {
         let bottomBtn = UIButton()
         bottomBtn.setTitle("向下", for: .normal)

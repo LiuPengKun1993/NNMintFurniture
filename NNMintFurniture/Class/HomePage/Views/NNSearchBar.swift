@@ -8,13 +8,12 @@
 
 import UIKit
 
-/// NNSearchBarDelegate
+// MARK: - NNSearchBarDelegate
 protocol NNSearchBarDelegate: NSObjectProtocol {
     func searchBarTextDidChange(textField: UITextField)
     func searchBarCancelButtonClicked(searchBar:NNSearchBar)
     func searchBarTextFieldShouldReturn(textField: UITextField)
 }
-
 
 class NNSearchBar: UIView, UITextFieldDelegate {
     weak var delegate: NNSearchBarDelegate?
@@ -22,22 +21,22 @@ class NNSearchBar: UIView, UITextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(cancelBtn)
-        /// 添加搜索输入框
+        // 添加搜索输入框
         addSubview(textField)
     }
-
     
-    /// 输入文本框输入字体时调用
+    // MARK: - 输入文本框输入字体时调用
     func searchBarTextDidChange(textField: UITextField) {
         delegate?.searchBarTextDidChange(textField: textField)
     }
     
-    /// 点击取消按钮
+    // MARK: - 点击取消按钮
     func cancelBtnClick() {
         delegate?.searchBarCancelButtonClicked(searchBar: self)
     }
     
-    /// 懒加载搜索输入框
+    // MARK: - 懒加载
+    // MARK: 懒加载搜索输入框
     private lazy var textField: NNSearchTextField = {
         let textField = NNSearchTextField()
         textField.frame = CGRect(x: 0, y: 0, width: NNScreenWidth - 60, height: kSearchBarH)
@@ -46,7 +45,7 @@ class NNSearchBar: UIView, UITextFieldDelegate {
        return textField
     }()
     
-    /// 懒加载取消按钮
+    // MARK: 懒加载取消按钮
     private lazy var cancelBtn: UIButton = {
         let cancelBtn = UIButton()
         cancelBtn.frame = CGRect(x: NNScreenWidth - 60, y: 0, width: 40, height: kSearchBarH)
@@ -57,7 +56,7 @@ class NNSearchBar: UIView, UITextFieldDelegate {
         return cancelBtn
     }()
     
-    /// UITextFieldDelegate - 点击键盘 search
+    // MARK: - UITextFieldDelegate - 点击键盘 search
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         return ((delegate?.searchBarTextFieldShouldReturn(textField: textField)) != nil)
     }

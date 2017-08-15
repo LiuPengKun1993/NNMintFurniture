@@ -9,34 +9,37 @@
 import UIKit
 
 class NNSearchController: NNBaseViewController, NNSearchBarDelegate {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: true)
         navigationItem.titleView = searchBar
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: UIView())
     }
+
     
-    /// NNSearchBarDelegate : searchBarTextDidChange
+    // MARK: - NNSearchBarDelegate 代理
+    // MARK: searchBarTextDidChange
     func searchBarTextDidChange(textField: UITextField) {
         print("你输入的是:" + String(describing: textField))
     }
-    /// searchBarCancelButtonClicked
+    
+    // MARK: searchBarCancelButtonClicked
     func searchBarCancelButtonClicked(searchBar: NNSearchBar) {
         searchBar.endEditing(true)
         navigationController?.popViewController(animated: true)
     }
     
-    /// searchBarTextFieldShouldReturn
+    // MARK: searchBarTextFieldShouldReturn
     func searchBarTextFieldShouldReturn(textField: UITextField) {
         print("searchBarTextFieldShouldReturn")
     }
     
+    // MARK: - 点击屏幕时结束编辑
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         searchBar.endEditing(true)
     }
     
-    /// 懒加载
+    // MARK: - 懒加载 searchBar
     private lazy var searchBar : NNSearchBar = {
         let seacrhBar = NNSearchBar()
         seacrhBar.delegate = self

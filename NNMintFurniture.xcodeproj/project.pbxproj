@@ -27,7 +27,6 @@
 		697D84311F400AF8009ABC29 /* NNHomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84231F400AF8009ABC29 /* NNHomePageController.swift */; };
 		697D84321F400AF8009ABC29 /* NNSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84241F400AF8009ABC29 /* NNSearchController.swift */; };
 		697D84331F400AF8009ABC29 /* NNTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84251F400AF8009ABC29 /* NNTestViewController.swift */; };
-		697D84341F400AF8009ABC29 /* NNHomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84281F400AF8009ABC29 /* NNHomePageView.swift */; };
 		697D84351F400AF8009ABC29 /* NNSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84291F400AF8009ABC29 /* NNSearchBar.swift */; };
 		697D84361F400AF8009ABC29 /* NNSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */; };
 		697D84371F400AF8009ABC29 /* NNMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842D1F400AF8009ABC29 /* NNMeController.swift */; };
@@ -82,7 +81,6 @@
 		697D84231F400AF8009ABC29 /* NNHomePageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNHomePageController.swift; sourceTree = "<group>"; };
 		697D84241F400AF8009ABC29 /* NNSearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchController.swift; sourceTree = "<group>"; };
 		697D84251F400AF8009ABC29 /* NNTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNTestViewController.swift; sourceTree = "<group>"; };
-		697D84281F400AF8009ABC29 /* NNHomePageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNHomePageView.swift; sourceTree = "<group>"; };
 		697D84291F400AF8009ABC29 /* NNSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchBar.swift; sourceTree = "<group>"; };
 		697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchTextField.swift; sourceTree = "<group>"; };
 		697D842D1F400AF8009ABC29 /* NNMeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNMeController.swift; sourceTree = "<group>"; };
@@ -320,7 +318,6 @@
 		697D84271F400AF8009ABC29 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				697D84281F400AF8009ABC29 /* NNHomePageView.swift */,
 				697D84291F400AF8009ABC29 /* NNSearchBar.swift */,
 				697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */,
 			);
@@ -566,7 +563,6 @@
 			files = (
 				697D841A1F400A04009ABC29 /* NNItemTableViewCell.swift in Sources */,
 				697D84191F400A04009ABC29 /* NNItemTableViewController.swift in Sources */,
-				697D84341F400AF8009ABC29 /* NNHomePageView.swift in Sources */,
 				697D84351F400AF8009ABC29 /* NNSearchBar.swift in Sources */,
 				697D84361F400AF8009ABC29 /* NNSearchTextField.swift in Sources */,
 				697D84371F400AF8009ABC29 /* NNMeController.swift in Sources */,
