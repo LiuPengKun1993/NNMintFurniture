@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDataSource, NNSearchBarDelegate {
+class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,12 +25,14 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
         cell?.accessoryType = .disclosureIndicator
         switch indexPath.row {
         case 0:
-            cell?.textLabel?.text = "UITableView"
+            cell?.textLabel?.text = "UITableView0"
         case 1:
-            cell?.textLabel?.text = "UIScrollView"
+            cell?.textLabel?.text = "UITableView1"
         case 2:
-            cell?.textLabel?.text = "UICollectionView-0"
+            cell?.textLabel?.text = "UIScrollView"
         case 3:
+            cell?.textLabel?.text = "UICollectionView-0"
+        case 4:
             cell?.textLabel?.text = "UICollectionView-1"
         default:
             cell?.textLabel?.text = "default"
@@ -44,31 +46,26 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
 
         switch indexPath.row {
         case 0:
-            navigationController?.pushViewController(NNItemTableViewController(), animated: true)
+            let tableViewVC = NNItemTableViewController()
+            tableViewVC.type = tableViewType.haveHeader
+            navigationController?.pushViewController(tableViewVC, animated: true)
         case 1:
-            navigationController?.pushViewController(NNItemScrollView(), animated: true)
+            let tableViewVC = NNItemTableViewController()
+            tableViewVC.type = tableViewType.noHeader
+            navigationController?.pushViewController(tableViewVC, animated: true)
         case 2:
-            navigationController?.pushViewController(NNItemCollectionViewController(), animated: true)
+            navigationController?.pushViewController(NNItemScrollView(), animated: true)
         case 3:
+            navigationController?.pushViewController(NNItemCollectionViewController(), animated: true)
+        case 4:
             navigationController?.pushViewController(NNItemCollectionViewController(), animated: true)
         default:
             return
         }
     }
     
-    /// NNSearchBarDelegate : searchBarTextDidChange
-    func searchBarTextDidChange(textField: UITextField) {
-        print("你输入的是:" + String(describing: textField))
-    }
-    /// searchBarCancelButtonClicked
-    func searchBarCancelButtonClicked(searchBar: NNSearchBar) {
-        searchBar.endEditing(true)
-        navigationController?.popViewController(animated: true)
-    }
-    
-    /// searchBarTextFieldShouldReturn
-    func searchBarTextFieldShouldReturn(textField: UITextField) {
-        print("searchBarTextFieldShouldReturn")
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.navigationBar.alpha = 1
     }
     
     private lazy var tableView : UITableView = {

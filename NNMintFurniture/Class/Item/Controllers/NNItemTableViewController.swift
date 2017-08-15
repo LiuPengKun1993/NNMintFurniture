@@ -10,16 +10,37 @@ import UIKit
 
 let NNItemTableViewCellID = "NNItemTableViewCellID"
 
-class NNItemTableViewController: UITableViewController {
+// MARK: - 枚举判断 UITableView 类型
+enum tableViewType {
+    case noHeader
+    case haveHeader
+}
 
+class NNItemTableViewController: UITableViewController {
+    
+    var type: tableViewType = .noHeader
+    var currentPostion = CGFloat()
+    var lastPosition = CGFloat()
+    var stopPosition = CGFloat()
+    var topBool = Bool()
+    var bottomBool = Bool()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "UITableView"
+        lastPosition = 0
+        stopPosition = 0
+        topBool = true
+        bottomBool = true
         let nib = UINib(nibName: String(describing: NNItemTableViewCell.self), bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: NNItemTableViewCellID)
         tableView.rowHeight = 110
-        tableView.sectionHeaderHeight = 180
-        tableView.tableHeaderView = shufflingFigureView
+        if type == .haveHeader {
+            title = "导航栏 tableView"
+            tableView.sectionHeaderHeight = 180
+            tableView.tableHeaderView = shufflingFigureView
+        } else {
+            title = "导航栏渐变 tableView"
+        }
     }
 
     // MARK: - Table view data source
@@ -36,7 +57,7 @@ class NNItemTableViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    //MARK - 懒加载轮播视图
+    // MARK: - 懒加载轮播视图
     private lazy var shufflingFigureView : NNShufflingFigureView = {
         let frame = CGRect(x: 0, y: 0, width: NNScreenWidth, height: 180)
         let imageView = ["shuffling1", "shuffling2", "shuffling3", "shuffling4"]
@@ -46,9 +67,38 @@ class NNItemTableViewController: UITableViewController {
     }()
 }
 
-//MARK - 轮播代理方法
+// MARK: - 轮播代理方法
 extension NNItemTableViewController: NNShufflingFigureViewDelegate {
     func addShufflingFigureView(addShufflingFigureView: NNShufflingFigureView, iconClick index: NSInteger) {
         print(index)
+    }
+}
+
+// MARK: - UIScrollViewDelegate 滚动页面时调用
+extension NNItemTableViewController {
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if type == tableViewType.haveHeader {
+            return
+        }
+        currentPostion = scrollView.contentOffset.y
+        if currentPostion > 0 {
+            if currentPostion - lastPosition >= 0 {
+                if topBool {
+                    topBool = false
+                    bottomBool = true
+                    stopPosition = currentPostion + 64
+                }
+                lastPosition = currentPostion
+                navigationController?.navigationBar.alpha = 1 - currentPostion / 500
+            } else {
+                if bottomBool {
+                    bottomBool = false
+                    topBool = true
+                    stopPosition = currentPostion + 64
+                }
+                lastPosition = currentPostion
+                navigationController?.navigationBar.alpha = (stopPosition - currentPostion) / 200
+            }
+        }
     }
 }

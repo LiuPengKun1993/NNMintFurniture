@@ -230,8 +230,8 @@
 		697D840D1F400A04009ABC29 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				697D840E1F400A04009ABC29 /* NNItemCollectionViewController.swift */,
 				697D840F1F400A04009ABC29 /* NNItemController.swift */,
+				697D840E1F400A04009ABC29 /* NNItemCollectionViewController.swift */,
 				697D84101F400A04009ABC29 /* NNItemScrollView.swift */,
 				697D84111F400A04009ABC29 /* NNItemTableViewController.swift */,
 			);
