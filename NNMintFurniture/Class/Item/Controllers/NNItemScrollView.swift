@@ -8,29 +8,115 @@
 
 import UIKit
 
-class NNItemScrollView: NNBaseViewController {
-
+class NNItemScrollView: UIViewController, UIScrollViewDelegate, NNItemBtnViewDelegate {
+    
+    var imageView: UIImageView!
+    var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         title = "UIScrollView"
-        // Do any additional setup after loading the view.
-    }
+        view.backgroundColor = UIColor.white
+        let amplificationBtn = UIBarButtonItem(title: "放大", style: .plain, target: self, action: #selector(NNItemScrollView.amplificationBtnClick))
+        let narrowDownBtn = UIBarButtonItem(title: "缩小", style: .plain, target: self, action: #selector(NNItemScrollView.narrowDownBtnClick))
+        navigationItem.rightBarButtonItems = [amplificationBtn, narrowDownBtn]
+        
+        scrollView = UIScrollView(frame: view.frame)
+        view.addSubview(scrollView)
+        view.addSubview(itemBtnView)
+        scrollView.delegate = self
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let image = UIImage(named: "shuffling3")
+        imageView = UIImageView(image: image)
+        scrollView.addSubview(imageView)
+        scrollView.contentSize = image!.size
+        
+        // 缩放
+        scrollView.minimumZoomScale = 0.5
+        scrollView.maximumZoomScale = 2
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    private lazy var itemBtnView: NNItemBtnView = {
+        let itemBtnView = NNItemBtnView()
+        itemBtnView.frame = CGRect(x: 30, y: 100, width: 100, height: 100)
+        itemBtnView.delegate = self
+        return itemBtnView
+    }()
+    
+    // MARK: - Action
+    // MARK: 放大
+    func amplificationBtnClick() {
+        var zoomScale = scrollView.zoomScale // 当前缩放
+        zoomScale += 0.1
+        if zoomScale >= scrollView.maximumZoomScale {
+            return
+        }
+        self.scrollView.setZoomScale(zoomScale, animated: true)
     }
-    */
+    
+    // MARK: 缩小
+    func narrowDownBtnClick() {
+        var zoomScale = scrollView.zoomScale // 当前缩放
+        zoomScale -= 0.1
+        if zoomScale <= scrollView.minimumZoomScale {
+            return
+        }
+        self.scrollView.setZoomScale(zoomScale, animated: true)
+    }
+    
+    // MARK: - UIScrollViewDelegate
+    // MARK: - 滚动中
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print(#function)
+    }
+    
+    // MARK: - 手指触摸开始滚动
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        print(#function)
+    }
+    
+    // MARK: 手指离开屏幕后，滚动视图滚动开始减速动画
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        scrollView.decelerationRate = scrollView.decelerationRate/2
+    }
+    
+    // MARK: 返回要缩放的View
+    func viewForZooming(in scrollView: UIScrollView) -> UIView?  {
+        return self.imageView
+    }
+    
+    // MARK: - 点击顶部的时间，是否回滚到顶部
+    func scrollViewShouldScrollToTop(_ scrollView: UIScrollView) -> Bool {
+        return scrollView.scrollsToTop
+    }
+}
 
+extension NNItemScrollView {
+    func leftBtnClickDelegate() {
+        var point = self.scrollView.contentOffset
+        point.x += 100
+        point.x = point.x >= self.scrollView.contentSize.width ? 0 : point.x
+        scrollView.setContentOffset(point, animated: true)
+    }
+    
+    func rightBtnClickDelegate() {
+        var point = self.scrollView.contentOffset
+        point.x -= 100
+        point.x = point.x <= -NNScreenWidth ? 0 : point.x
+        scrollView.setContentOffset(point, animated: true)
+    }
+    
+    func topBtnClickDelegate() {
+        var point = self.scrollView.contentOffset
+        point.y += 50
+        point.y = point.y >= self.scrollView.contentSize.height ? 0 : point.y
+        scrollView.setContentOffset(point, animated: true)
+    }
+    
+    func bottomBtnClickDelegate() {
+        var point = self.scrollView.contentOffset
+        point.y -= 50
+        point.y = point.y <= -NNScreenHeight ? 0 : point.y
+        scrollView.setContentOffset(point, animated: true)
+    }
 }

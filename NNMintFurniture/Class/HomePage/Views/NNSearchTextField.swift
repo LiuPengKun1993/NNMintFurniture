@@ -13,7 +13,6 @@ class NNSearchTextField: UITextField {
     /// 初始化 NNSearchTextField
     override init(frame: CGRect) {
         super .init(frame: frame)
-//        leftView?.addSubview(leftImage)
         leftView = leftV
         leftViewMode = UITextFieldViewMode.always
         placeholder = "搜索商品、专题"

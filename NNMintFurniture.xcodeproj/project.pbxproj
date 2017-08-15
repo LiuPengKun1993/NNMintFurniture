@@ -32,6 +32,7 @@
 		697D84361F400AF8009ABC29 /* NNSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */; };
 		697D84371F400AF8009ABC29 /* NNMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D842D1F400AF8009ABC29 /* NNMeController.swift */; };
 		697D84391F402C9F009ABC29 /* NNShufflingFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */; };
+		697D843D1F42BC2C009ABC29 /* NNItemBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697D843C1F42BC2C009ABC29 /* NNItemBtnView.swift */; };
 		813CCCB5B2A2E2B08A82A481 /* Pods_NNMintFurniture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC85EFF03B441FC01A7A94D /* Pods_NNMintFurniture.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		697D842A1F400AF8009ABC29 /* NNSearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNSearchTextField.swift; sourceTree = "<group>"; };
 		697D842D1F400AF8009ABC29 /* NNMeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNMeController.swift; sourceTree = "<group>"; };
 		697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNShufflingFigureView.swift; sourceTree = "<group>"; };
+		697D843C1F42BC2C009ABC29 /* NNItemBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NNItemBtnView.swift; sourceTree = "<group>"; };
 		A91616105C4E8BF0015C3E3A /* Pods-NNMintFurniture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NNMintFurniture.release.xcconfig"; path = "Pods/Target Support Files/Pods-NNMintFurniture/Pods-NNMintFurniture.release.xcconfig"; sourceTree = "<group>"; };
 		ECC85EFF03B441FC01A7A94D /* Pods_NNMintFurniture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NNMintFurniture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -251,6 +253,7 @@
 				697D84141F400A04009ABC29 /* NNItemTableViewCell.swift */,
 				697D84151F400A04009ABC29 /* NNItemTableViewCell.xib */,
 				697D84381F402C9F009ABC29 /* NNShufflingFigureView.swift */,
+				697D843C1F42BC2C009ABC29 /* NNItemBtnView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				697D84181F400A04009ABC29 /* NNItemScrollView.swift in Sources */,
 				697D84331F400AF8009ABC29 /* NNTestViewController.swift in Sources */,
 				697D84391F402C9F009ABC29 /* NNShufflingFigureView.swift in Sources */,
+				697D843D1F42BC2C009ABC29 /* NNItemBtnView.swift in Sources */,
 				697D84171F400A04009ABC29 /* NNItemController.swift in Sources */,
 				697D84301F400AF8009ABC29 /* NNClassificationController.swift in Sources */,
 				697D84161F400A04009ABC29 /* NNItemCollectionViewController.swift in Sources */,

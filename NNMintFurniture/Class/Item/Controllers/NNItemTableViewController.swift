@@ -35,7 +35,7 @@ class NNItemTableViewController: UITableViewController {
         tableView.register(nib, forCellReuseIdentifier: NNItemTableViewCellID)
         tableView.rowHeight = 110
         if type == .haveHeader {
-            title = "导航栏 tableView"
+            title = "轮播图 tableView"
             tableView.sectionHeaderHeight = 180
             tableView.tableHeaderView = shufflingFigureView
         } else {
