@@ -9,6 +9,8 @@
  - SnapKit (3.1.2) - 设置约束 
  - SwiftyJSON (3.1.4) - 解析 JSON 数据 
  
+## 详情请移步博客地址：http://www.jianshu.com/p/e8ed634b46a8
+ 
 ## 项目框架结构图
 
 ![](https://github.com/liuzhongning/NNMintFurniture/blob/master/images/image.png)
