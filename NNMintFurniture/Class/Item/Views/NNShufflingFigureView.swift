@@ -14,10 +14,12 @@ import UIKit
 }
 
 class NNShufflingFigureView: UIView {
+    
     var pageControl : UIPageControl?
     var currentPage: NSInteger?
     var images: NSArray?
     var delegate:NNShufflingFigureViewDelegate?
+    
     private var imageScrollView : UIScrollView?
     private var currentImgs = NSMutableArray()
     private var autoPlay : Bool?

@@ -9,15 +9,29 @@
 import UIKit
 
 class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDataSource {
+    private var rightBarBtnSelected = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 添加按钮
+        let addBtn = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onRightBtn(sender:)))
+        navigationItem.rightBarButtonItem = addBtn;
+
         view.addSubview(tableView)
+    }
+    
+    func onRightBtn(sender: UIButton) {
+        rightBarBtnSelected = !rightBarBtnSelected
+        if rightBarBtnSelected == true {
+            
+        } else {
+            
+        }
     }
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -25,15 +39,13 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
         cell?.accessoryType = .disclosureIndicator
         switch indexPath.row {
         case 0:
-            cell?.textLabel?.text = "UITableView0"
+            cell?.textLabel?.text = "轮播图 tableView"
         case 1:
-            cell?.textLabel?.text = "UITableView1"
+            cell?.textLabel?.text = "导航栏渐变 tableView"
         case 2:
             cell?.textLabel?.text = "UIScrollView"
         case 3:
-            cell?.textLabel?.text = "UICollectionView-0"
-        case 4:
-            cell?.textLabel?.text = "UICollectionView-1"
+            cell?.textLabel?.text = "UICollectionView瀑布流"
         default:
             cell?.textLabel?.text = "default"
         }
@@ -56,8 +68,6 @@ class NNItemController: NNBaseViewController, UITableViewDelegate, UITableViewDa
         case 2:
             navigationController?.pushViewController(NNItemScrollView(), animated: true)
         case 3:
-            navigationController?.pushViewController(NNItemCollectionViewController(), animated: true)
-        case 4:
             navigationController?.pushViewController(NNItemCollectionViewController(), animated: true)
         default:
             return

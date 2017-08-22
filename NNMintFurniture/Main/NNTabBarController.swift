@@ -22,10 +22,10 @@ class NNTabBarController: UITabBarController {
     
     // MARK: - 添加子控制器
     func addChildControllers() {
-        addChildController(childController: NNHomePageController(), title: "薄荷家居", imageName: "pfb_tabbar_homepage")
-        addChildController(childController: NNItemController(), title: "单品", imageName: "pfb_tabbar_order")
-        addChildController(childController: NNClassificationController(), title: "分类", imageName: "pfb_tabbar_discover")
-        addChildController(childController: NNMeController(), title: "我", imageName: "pfb_tabbar_mine")
+        addChildController(childController: NNHomePageController(), title: "首页", imageName: "pfb_tabbar_homepage")
+        addChildController(childController: NNItemController(), title: "发现", imageName: "pfb_tabbar_order")
+        addChildController(childController: NNClassificationController(), title: "消息", imageName: "pfb_tabbar_discover")
+        addChildController(childController: NNMeController(), title: "我的", imageName: "pfb_tabbar_mine")
     }
     
     // MARK: 添加子控制器

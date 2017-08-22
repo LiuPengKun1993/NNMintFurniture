@@ -43,7 +43,7 @@ class NNItemTableViewController: UITableViewController {
         }
     }
 
-    // MARK: - Table view data source
+    // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -67,7 +67,7 @@ class NNItemTableViewController: UITableViewController {
     }()
 }
 
-// MARK: - 轮播代理方法
+// MARK: - 轮播代理方法，处理轮播图的点击事件
 extension NNItemTableViewController: NNShufflingFigureViewDelegate {
     func addShufflingFigureView(addShufflingFigureView: NNShufflingFigureView, iconClick index: NSInteger) {
         print(index)

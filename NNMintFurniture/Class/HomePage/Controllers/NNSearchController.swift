@@ -9,6 +9,7 @@
 import UIKit
 
 class NNSearchController: NNBaseViewController, NNSearchBarDelegate {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: true)
@@ -16,7 +17,6 @@ class NNSearchController: NNBaseViewController, NNSearchBarDelegate {
         navigationItem.leftBarButtonItem = UIBarButtonItem(customView: UIView())
     }
 
-    
     // MARK: - NNSearchBarDelegate 代理
     // MARK: searchBarTextDidChange
     func searchBarTextDidChange(textField: UITextField) {

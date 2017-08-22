@@ -8,28 +8,59 @@
 
 import UIKit
 
-class NNMeController: NNBaseViewController {
+let NNMeControllerID = "NNMeControllerID"
 
+class NNMeController: NNBaseViewController, UITableViewDelegate, UITableViewDataSource {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addSubview(tableView)
     }
-
+    
+    // MARK: - 懒加载 UITableView
+    private lazy var tableView : UITableView = {
+        let tableView = UITableView()
+        tableView.frame = CGRect(x: 0, y: 0, width: NNScreenWidth, height: NNScreenHeight)
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 44, 0)
+        tableView.separatorStyle = .none
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: NNMeControllerID)
+        tableView.keyboardDismissMode = UIScrollViewKeyboardDismissMode.onDrag
+        return tableView
+    }()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+// MARK: - UITableViewDelegate, UITableViewDataSource
+extension NNMeController {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: NNMeControllerID)
+        cell?.accessoryType = .disclosureIndicator
+        switch indexPath.row {
+        case 0:
+            cell?.textLabel?.text = "SnapKit 用法"
+        default:
+            cell?.textLabel?.text = "SnapKit 用法"
+        }
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        switch indexPath.row {
+        case 0:
+            navigationController?.pushViewController(NNSnapKitController(), animated: true)
+        default:
+            return
+        }
+    }
 }
