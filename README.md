@@ -9,8 +9,10 @@
  - SnapKit (3.1.2) - 设置约束 
  - SwiftyJSON (3.1.4) - 解析 JSON 数据 
  
-## 详情请移步博客地址：http://www.jianshu.com/p/e8ed634b46a8
  
+## 详情请移步博客地址：[iOS 开发 - Swift 全面系统的学习（持续更新...）](https://liuzhongning.github.io/2017/09/29/iOS%20开发%20-%20Swift%20全面系统的学习（持续更新...）/)
+
+
 ## 项目框架结构图
 
 ![](https://github.com/liuzhongning/NNMintFurniture/blob/master/images/image.png)
