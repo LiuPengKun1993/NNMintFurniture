@@ -16,3 +16,7 @@
 ## 项目框架结构图
 
 ![](https://github.com/liuzhongning/NNMintFurniture/blob/master/images/image.png)
+
+# License
+
+This repositorie is released under the under [MIT License](https://github.com/liuzhongning/NNMintFurniture/new/master)
